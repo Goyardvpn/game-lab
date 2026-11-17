@@ -30,7 +30,6 @@
 (function(){
 const $=id=>document.getElementById(id);
 if(!window.Blockly){$('status').textContent='Не загрузился Blockly — проверь интернет';return;}
-Blockly.setLocale(Blockly.Msg);
 const defs={
  move_forward:{message0:'⬆ идти вперёд на %1 шагов',args0:[{type:'field_number',name:'STEPS',value:3,min:1,max:10,precision:1}],previousStatement:null,nextStatement:null,colour:210,tooltip:'Перемещает персонажа вперёд.'},
  move_back:{message0:'⬇ идти назад на %1 шагов',args0:[{type:'field_number',name:'STEPS',value:2,min:1,max:10}],previousStatement:null,nextStatement:null,colour:210},
